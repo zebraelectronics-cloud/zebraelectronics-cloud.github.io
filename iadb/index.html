@@ -21,6 +21,7 @@
 <script type="text/javascript">
     const frame = document.getElementById("frame");
     frame.addEventListener("load", () => {
+        console.log("test", frame.contentWindow.document.title);
         this.title = frame.contentWindow.document.title;
     });
 
